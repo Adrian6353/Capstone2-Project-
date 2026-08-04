@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://xyie4pcxp7om"]
+
+[ext_resource type="Texture2D" uid="uid://dpfam24vu3vrp" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_000.png" id="1_l5hpd"]
+[ext_resource type="Texture2D" uid="uid://ctr5chhtodsrk" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_001.png" id="2_g4rn2"]
+[ext_resource type="Texture2D" uid="uid://c8siic12od6n" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_002.png" id="3_406i1"]
+[ext_resource type="Texture2D" uid="uid://dokswmsyng3sk" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_003.png" id="4_ctb6d"]
+[ext_resource type="Script" uid="uid://vkr3b2soppb1" path="res://Scenes/SupportScenes/projectile_impact.gd" id="4_wr3sd"]
+[ext_resource type="Texture2D" uid="uid://dxr1brhjah7f0" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_004.png" id="5_uima6"]
+[ext_resource type="Texture2D" uid="uid://dk7jvrmwio31" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_005.png" id="6_bahea"]
+[ext_resource type="Texture2D" uid="uid://cgxf16i8bqelc" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_006.png" id="7_17p6h"]
+[ext_resource type="Texture2D" uid="uid://c37sdegi4fwya" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_007.png" id="8_yvsxa"]
+[ext_resource type="Texture2D" uid="uid://cupnyc5rxgbvi" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_008.png" id="9_16sdn"]
+[ext_resource type="Texture2D" uid="uid://h365xihehwav" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_009.png" id="10_wnihb"]
+[ext_resource type="Texture2D" uid="uid://c8p3jldl5hyv8" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_010.png" id="11_ul1cv"]
+[ext_resource type="Texture2D" uid="uid://bhjkwf0map3wh" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_011.png" id="12_qmxmb"]
+[ext_resource type="Texture2D" uid="uid://u3yx3cg8dysc" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_012.png" id="13_m5dth"]
+[ext_resource type="Texture2D" uid="uid://iji2x4diewa6" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_013.png" id="14_t4cgo"]
+[ext_resource type="Texture2D" uid="uid://dd3sk6itd45jw" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_014.png" id="15_nxiy4"]
+[ext_resource type="Texture2D" uid="uid://chdrlxcgd7ea7" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_015.png" id="16_fr3dn"]
+[ext_resource type="Texture2D" uid="uid://c3pxqdwdmfkgy" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_016.png" id="17_8esum"]
+[ext_resource type="Texture2D" uid="uid://cy0yy78t01ky5" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_017.png" id="18_t6rdo"]
+[ext_resource type="Texture2D" uid="uid://bvsprrydmvdms" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_018.png" id="19_uvuj4"]
+[ext_resource type="Texture2D" uid="uid://cw5m7w3wtgoc3" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_019.png" id="20_hfhtl"]
+[ext_resource type="Texture2D" uid="uid://bpqte7hru64on" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_020.png" id="21_jto7r"]
+[ext_resource type="Texture2D" uid="uid://ctawshqcgi118" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_021.png" id="22_knp4i"]
+[ext_resource type="Texture2D" uid="uid://brt2sy1ia7p00" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_022.png" id="23_hg83q"]
+[ext_resource type="Texture2D" uid="uid://yg6b032jg225" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_023.png" id="24_s5klt"]
+[ext_resource type="Texture2D" uid="uid://bu6cjurepfsih" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_024.png" id="25_adwjt"]
+[ext_resource type="Texture2D" uid="uid://bjioosvyg4wxn" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_025.png" id="26_cd4gj"]
+[ext_resource type="Texture2D" uid="uid://jprpf1bjoyoy" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_026.png" id="27_u2dkv"]
+[ext_resource type="Texture2D" uid="uid://c8qne8i8e5gn" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_027.png" id="28_0v5t2"]
+[ext_resource type="Texture2D" uid="uid://dw31fuqdm1tnw" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_028.png" id="29_7w3yo"]
+[ext_resource type="Texture2D" uid="uid://dw4g2hpwmn0vp" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BloodImpact/30fps/Frames/Effect_BloodImpact_1/Effect_BloodImpact_1_029.png" id="30_lci6g"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdasi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_l5hpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_g4rn2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_406i1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ctb6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uima6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bahea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_17p6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yvsxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_16sdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wnihb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ul1cv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qmxmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_m5dth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_t4cgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_nxiy4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fr3dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_8esum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_t6rdo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_uvuj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_hfhtl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_jto7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_knp4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_hg83q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_s5klt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_adwjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_cd4gj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_u2dkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_0v5t2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_7w3yo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_lci6g")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProjectileImpact" type="AnimatedSprite2D" unique_id=795069451]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_mdasi")
+frame_progress = 0.1915526
+speed_scale = 12.0
+script = ExtResource("4_wr3sd")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

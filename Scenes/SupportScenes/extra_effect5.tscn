@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://dqcapvqknd7pr"]
+
+[ext_resource type="Texture2D" uid="uid://bksb2s2o5lhbo" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt1.png" id="1_k5quw"]
+[ext_resource type="Texture2D" uid="uid://b2k3oxjx8enc1" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt2.png" id="2_jc1c0"]
+[ext_resource type="Texture2D" uid="uid://ckmrohs2cc2bl" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt3.png" id="3_o5nwq"]
+[ext_resource type="Texture2D" uid="uid://ee46df85derp" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt4.png" id="4_jq3j6"]
+[ext_resource type="Script" uid="uid://vkr3b2soppb1" path="res://Scenes/SupportScenes/projectile_impact.gd" id="4_oibtk"]
+[ext_resource type="Texture2D" uid="uid://colqgpmjp7f3g" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt5.png" id="5_o11q2"]
+[ext_resource type="Texture2D" uid="uid://cxw0hpq487wm1" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt6.png" id="6_5jnj2"]
+[ext_resource type="Texture2D" uid="uid://cmm6k3lr25bvu" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt7.png" id="7_87ek5"]
+[ext_resource type="Texture2D" uid="uid://btkdgqnibjxpe" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt8.png" id="8_1kfap"]
+[ext_resource type="Texture2D" uid="uid://covqd4thdjtfy" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt9.png" id="9_jn3br"]
+[ext_resource type="Texture2D" uid="uid://b5ftrsb8vtwyj" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt10.png" id="10_ylcgj"]
+[ext_resource type="Texture2D" uid="uid://cml1vv5dh0fyj" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt11.png" id="11_ul218"]
+[ext_resource type="Texture2D" uid="uid://bkee66eaoauso" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/DarkBolt/Dark-Bolt12.png" id="12_rd72v"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdasi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_k5quw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jc1c0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_o5nwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jq3j6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_o11q2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5jnj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_87ek5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1kfap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_jn3br")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ylcgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ul218")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rd72v")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProjectileImpact" type="AnimatedSprite2D" unique_id=795069451]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_mdasi")
+frame_progress = 0.54981554
+speed_scale = 4.0
+script = ExtResource("4_oibtk")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

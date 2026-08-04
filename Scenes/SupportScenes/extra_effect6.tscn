@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://clicp85twk0le"]
+
+[ext_resource type="Texture2D" uid="uid://d1eegq33atwfe" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_1.png" id="1_fhrut"]
+[ext_resource type="Texture2D" uid="uid://bdi8itviyfdmt" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_2.png" id="2_55ym6"]
+[ext_resource type="Texture2D" uid="uid://c5coeuxih481n" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_3.png" id="3_yxjrh"]
+[ext_resource type="Texture2D" uid="uid://cb6mn1pggy2s2" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_4.png" id="4_7w4ay"]
+[ext_resource type="Script" uid="uid://vkr3b2soppb1" path="res://Scenes/SupportScenes/projectile_impact.gd" id="4_nwqoe"]
+[ext_resource type="Texture2D" uid="uid://dm7kx4diesymv" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_5.png" id="5_5l37d"]
+[ext_resource type="Texture2D" uid="uid://b6y36lvsv7mfu" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_6.png" id="6_s15cj"]
+[ext_resource type="Texture2D" uid="uid://jj282s11ofg8" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_7.png" id="7_rqjvt"]
+[ext_resource type="Texture2D" uid="uid://bnjqyupu64jjl" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_8.png" id="8_4kb4t"]
+[ext_resource type="Texture2D" uid="uid://cas0t6n51faxw" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_9.png" id="9_sciwo"]
+[ext_resource type="Texture2D" uid="uid://bspbtf7sve83j" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_6/Explosion_10.png" id="10_87csa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdasi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fhrut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_55ym6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yxjrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7w4ay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5l37d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s15cj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rqjvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4kb4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_sciwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_87csa")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProjectileImpact" type="AnimatedSprite2D" unique_id=795069451]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_mdasi")
+frame_progress = 0.009453757
+speed_scale = 3.5
+script = ExtResource("4_nwqoe")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

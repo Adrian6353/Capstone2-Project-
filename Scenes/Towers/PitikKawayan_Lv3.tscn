@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://eov7ey64ych7"]
+
+[ext_resource type="Script" uid="uid://cklb0th61v4qe" path="res://Scenes/Towers/PitikKawayan.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dw5tenta822wl" path="res://Assets/Towers/PitikKawayan_Lv3.png" id="3_6r3yy"]
+[ext_resource type="Texture2D" uid="uid://cnwtl2ddjssjb" path="res://Assets/Effects/arrow.png" id="4_arrow"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_02Twi"]
+radius = 300.0
+
+[sub_resource type="Animation" id="Animation_02Twi"]
+resource_name = "Fire"
+length = 0.1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tower/Muzzle/MuzzleFlash:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_reset_02Twi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tower/Muzzle/MuzzleFlash:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_02Twi"]
+_data = {
+&"Fire": SubResource("Animation_02Twi"),
+&"RESET": SubResource("Animation_reset_02Twi")
+}
+
+[node name="Tower" type="Node2D" unique_id=1787727755]
+script = ExtResource("1_script")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=241074683]
+visible = false
+
+[node name="Tower" type="Sprite2D" parent="." unique_id=11360736]
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("3_6r3yy")
+
+[node name="Muzzle" type="Marker2D" parent="Tower" unique_id=590528602]
+
+[node name="MuzzleFlash" type="Sprite2D" parent="Tower/Muzzle" unique_id=1276289484]
+visible = false
+scale = Vector2(10, 10)
+texture = ExtResource("4_arrow")
+
+[node name="Range" type="Area2D" parent="." unique_id=2000929517]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=781848438]
+shape = SubResource("CircleShape2D_02Twi")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=301529001]
+libraries/ = SubResource("AnimationLibrary_02Twi")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

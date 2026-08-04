@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scenes/UIScenes/QuestHUD.gd" id="1"]
+
+[node name="QuestHUD" type="PanelContainer"]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+offset_left = -360
+offset_top = 16
+offset_right = -16
+offset_bottom = 200
+script = ExtResource("1")

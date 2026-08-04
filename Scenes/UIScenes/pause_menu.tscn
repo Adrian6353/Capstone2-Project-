@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://c8oatp7qx1tp"]
+
+[ext_resource type="FontFile" uid="uid://c2ohudc0o61ii" path="res://Resources/Fonts/kp_40_o1.tres" id="MainFont"]
+[ext_resource type="Script" uid="uid://g1hh3y4f6dbs" path="res://Scenes/UIScenes/pause_menu.gd" id="ScriptRes"]
+
+[sub_resource type="LabelSettings" id="TitleSettings"]
+font = ExtResource("MainFont")
+font_size = 42
+font_color = Color(0.95, 0.78, 0.32, 1)
+
+[sub_resource type="StyleBoxFlat" id="PanelStyle"]
+bg_color = Color(0.10, 0.06, 0.02, 0.96)
+border_color = Color(0.78, 0.58, 0.20, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="PauseMenu" type="Control" unique_id=893046716]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("ScriptRes")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1948761255]
+layer = 10
+
+[node name="DarkOverlay" type="ColorRect" parent="CanvasLayer" unique_id=1834905095]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.68)
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=334335424]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -220.0
+offset_top = -200.0
+offset_right = 220.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/CenterContainer" unique_id=1128511365]
+custom_minimum_size = Vector2(440, 380)
+layout_mode = 2
+theme_override_styles/panel = SubResource("PanelStyle")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer/PanelContainer" unique_id=37211395]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Title" type="Label" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer" unique_id=526100536]
+layout_mode = 2
+text = "⏸  PAUSED"
+label_settings = SubResource("TitleSettings")
+horizontal_alignment = 1
+
+[node name="Separator" type="HSeparator" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="StatsRow" type="HBoxContainer" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="WaveStatLabel" type="Label" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/StatsRow"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+theme_override_colors/font_color = Color(0.95, 0.78, 0.32, 1)
+text = "Wave 0"
+horizontal_alignment = 1
+
+[node name="GoldStatLabel" type="Label" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/StatsRow"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+theme_override_colors/font_color = Color(1.0, 0.85, 0.2, 1)
+text = "🪙 0"
+horizontal_alignment = 1
+
+[node name="HPStatLabel" type="Label" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/StatsRow"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+theme_override_colors/font_color = Color(0.35, 0.95, 0.35, 1)
+text = "❤ 100"
+horizontal_alignment = 1
+
+[node name="Separator2" type="HSeparator" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="OnlineStatusLabel" type="Label" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(0.55, 0.85, 0.55, 1)
+text = "✓ Online"
+horizontal_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer" unique_id=1814824238]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 8
+
+[node name="ButtonContainer" type="VBoxContainer" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer" unique_id=1636133795]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ResumeButton" type="Button" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer/ButtonContainer" unique_id=1805680152]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "▶  Resume"
+
+[node name="RestartButton" type="Button" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer/ButtonContainer" unique_id=2050885043]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "↺  Restart Level"
+
+[node name="MainMenuButton" type="Button" parent="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer/ButtonContainer" unique_id=2140824555]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "⌂  Main Menu"
+
+[connection signal="mouse_entered" from="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer/ButtonContainer/ResumeButton" to="." method="_on_button_hover"]
+[connection signal="pressed" from="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer/ButtonContainer/ResumeButton" to="." method="_on_resume_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer/ButtonContainer/RestartButton" to="." method="_on_button_hover"]
+[connection signal="pressed" from="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer/ButtonContainer/RestartButton" to="." method="_on_restart_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer/ButtonContainer/MainMenuButton" to="." method="_on_button_hover"]
+[connection signal="pressed" from="CanvasLayer/CenterContainer/PanelContainer/VBoxContainer/MarginContainer/ButtonContainer/MainMenuButton" to="." method="_on_main_menu_pressed"]

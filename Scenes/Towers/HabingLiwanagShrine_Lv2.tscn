@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://b0nle0lharce3"]
+
+[ext_resource type="Script" uid="uid://bqlkn18kvj4rd" path="res://Scenes/Towers/HabingLiwanagShrine.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://b5vnf3r0pira" path="res://Assets/Towers/HabingLiwanagShrine Lv.2.png" id="3_tower"]
+[ext_resource type="Texture2D" uid="uid://dplttwhaxw3ie" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame1.png" id="3_ttov1"]
+[ext_resource type="Texture2D" uid="uid://dwc6cpdch2idk" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame2.png" id="4_5tclw"]
+[ext_resource type="Texture2D" uid="uid://seuook4y67nr" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame3.png" id="5_ultmq"]
+[ext_resource type="Texture2D" uid="uid://u7lejenynsm7" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame4.png" id="6_5hvd7"]
+[ext_resource type="Texture2D" uid="uid://dl8ym8kjt40ov" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame5.png" id="7_h3jmo"]
+[ext_resource type="Texture2D" uid="uid://5xna2435tc37" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame6.png" id="8_60qnj"]
+[ext_resource type="Texture2D" uid="uid://c3k0kmrw4sllt" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame7.png" id="9_oe6hs"]
+[ext_resource type="Texture2D" uid="uid://bcrpbhe8m7p80" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame8.png" id="10_sbnbw"]
+[ext_resource type="Texture2D" uid="uid://cvw4022ipy83p" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame9.png" id="11_og4j3"]
+[ext_resource type="Texture2D" uid="uid://hwacunoddfgb" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 1/Frames/paladin_skill1_frame10.png" id="12_h2pen"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7vhxm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ttov1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5tclw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ultmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5hvd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_h3jmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_60qnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_oe6hs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sbnbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_og4j3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_h2pen")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_28Wov"]
+radius = 380.0
+
+[sub_resource type="Animation" id="Animation_28Wov"]
+resource_name = "Fire"
+length = 0.1
+step = 0.1
+
+[sub_resource type="Animation" id="Animation_reset_28Wov"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_28Wov"]
+_data = {
+&"Fire": SubResource("Animation_28Wov"),
+&"RESET": SubResource("Animation_reset_28Wov")
+}
+
+[node name="Tower" type="Node2D" unique_id=509842686]
+scale = Vector2(0.15, 0.15)
+script = ExtResource("1_script")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1830108807]
+visible = false
+texture = ExtResource("3_tower")
+
+[node name="Tower" type="Sprite2D" parent="." unique_id=1886597030]
+texture = ExtResource("3_tower")
+
+[node name="Muzzle" type="Marker2D" parent="Tower" unique_id=2065041423]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=1134108240]
+position = Vector2(-3.3881318e-21, 0)
+scale = Vector2(15, 15)
+sprite_frames = SubResource("SpriteFrames_7vhxm")
+frame_progress = 0.8203618
+speed_scale = 2.0
+
+[node name="Range" type="Area2D" parent="." unique_id=235116712]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=919715254]
+shape = SubResource("CircleShape2D_28Wov")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=757910792]
+libraries/ = SubResource("AnimationLibrary_28Wov")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

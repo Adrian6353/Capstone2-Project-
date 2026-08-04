@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://dd83ereshejj5"]
+
+[ext_resource type="Texture2D" uid="uid://c6ba216lbr564" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_000.png" id="1_x6bl6"]
+[ext_resource type="Texture2D" uid="uid://cjvgos0y2pcuy" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_001.png" id="2_sihej"]
+[ext_resource type="Texture2D" uid="uid://csnj0mmobjhpr" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_002.png" id="3_oa0bs"]
+[ext_resource type="Texture2D" uid="uid://ommxwdppeypd" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_003.png" id="4_7oe6p"]
+[ext_resource type="Texture2D" uid="uid://bqqrj3ml7hf45" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_004.png" id="5_2miyh"]
+[ext_resource type="Texture2D" uid="uid://bc3lxnwarug4t" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_005.png" id="6_vdk7x"]
+[ext_resource type="Texture2D" uid="uid://bj2kd5nv50tgm" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_006.png" id="7_04ivo"]
+[ext_resource type="Texture2D" uid="uid://bj4vigee3vmu6" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_007.png" id="8_jtg5t"]
+[ext_resource type="Texture2D" uid="uid://3ed0q6jmmh5d" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_008.png" id="9_fagc4"]
+[ext_resource type="Texture2D" uid="uid://cn1sn5vvtws20" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_009.png" id="10_15gme"]
+[ext_resource type="Texture2D" uid="uid://bi0nm15w4u5c4" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_010.png" id="11_j25jx"]
+[ext_resource type="Texture2D" uid="uid://djamp4m5l74w7" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_011.png" id="12_ueg8x"]
+[ext_resource type="Texture2D" uid="uid://bpf10lg6cjc1s" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_012.png" id="13_o3hxn"]
+[ext_resource type="Texture2D" uid="uid://dniw3xe5b4edh" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_013.png" id="14_qpi1c"]
+[ext_resource type="Texture2D" uid="uid://84w7na2t0gh0" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_014.png" id="15_t86fp"]
+[ext_resource type="Texture2D" uid="uid://bblyu46r4o22i" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_015.png" id="16_yw8hs"]
+[ext_resource type="Texture2D" uid="uid://0bhdpevkfqxq" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_016.png" id="17_4s6p7"]
+[ext_resource type="Texture2D" uid="uid://bq1er52ve2xcf" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_017.png" id="18_brdex"]
+[ext_resource type="Texture2D" uid="uid://h8ud7bttjh1u" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_018.png" id="19_3acw0"]
+[ext_resource type="Texture2D" uid="uid://debiu17wjn0oh" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_019.png" id="20_xsaxc"]
+[ext_resource type="Texture2D" uid="uid://bwgji0dqjv3kf" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_020.png" id="21_fdt3t"]
+[ext_resource type="Texture2D" uid="uid://cup3dt8vggegw" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_021.png" id="22_4dlg1"]
+[ext_resource type="Texture2D" uid="uid://dm3qpt8u3f6ib" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_022.png" id="23_xh71m"]
+[ext_resource type="Texture2D" uid="uid://hitix0obkap5" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_023.png" id="24_n87ur"]
+[ext_resource type="Texture2D" uid="uid://bgorofql8pden" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_024.png" id="25_srhm7"]
+[ext_resource type="Texture2D" uid="uid://dcehf4u4q3sem" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_025.png" id="26_skwwl"]
+[ext_resource type="Texture2D" uid="uid://6uigrv4qltmu" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_026.png" id="27_l0qbc"]
+[ext_resource type="Texture2D" uid="uid://dii4h1fatooph" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_027.png" id="28_u6fll"]
+[ext_resource type="Texture2D" uid="uid://w0ajhq5ip4wc" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_028.png" id="29_2nqhs"]
+[ext_resource type="Texture2D" uid="uid://ccmilj3bvpsfq" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Constellation/30fps/Frames/Effect_Constellation_1/Effect_Constellation_1_029.png" id="30_ixnrh"]
+[ext_resource type="Script" uid="uid://vkr3b2soppb1" path="res://Scenes/SupportScenes/projectile_impact.gd" id="31_ylo7a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdasi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x6bl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_sihej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oa0bs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7oe6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2miyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vdk7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_04ivo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jtg5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fagc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_15gme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_j25jx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ueg8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_o3hxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qpi1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_t86fp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_yw8hs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4s6p7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_brdex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3acw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_xsaxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_fdt3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_4dlg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_xh71m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_n87ur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_srhm7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_skwwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_l0qbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_u6fll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_2nqhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ixnrh")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProjectileImpact" type="AnimatedSprite2D" unique_id=795069451]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_mdasi")
+frame_progress = 0.17111637
+speed_scale = 5.0
+script = ExtResource("31_ylo7a")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

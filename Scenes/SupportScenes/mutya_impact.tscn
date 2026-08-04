@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://dlxnaxv0bokri"]
+
+[ext_resource type="Texture2D" uid="uid://cbgkqr4qcae13" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_000.png" id="1_l4hx0"]
+[ext_resource type="Texture2D" uid="uid://073i0ovhwwpf" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_001.png" id="2_krk1r"]
+[ext_resource type="Texture2D" uid="uid://dsf3f6onovjfa" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_002.png" id="3_23hjp"]
+[ext_resource type="Texture2D" uid="uid://b6e04q2p415og" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_003.png" id="4_0jtpn"]
+[ext_resource type="Script" uid="uid://vkr3b2soppb1" path="res://Scenes/SupportScenes/projectile_impact.gd" id="4_2coex"]
+[ext_resource type="Texture2D" uid="uid://csidtvlj1udyk" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_004.png" id="5_qrjih"]
+[ext_resource type="Texture2D" uid="uid://bhitrj23xleiv" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_005.png" id="6_huqpy"]
+[ext_resource type="Texture2D" uid="uid://dovtfsnhqhwia" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_006.png" id="7_bipyu"]
+[ext_resource type="Texture2D" uid="uid://bjagykolms2uf" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_007.png" id="8_ibcas"]
+[ext_resource type="Texture2D" uid="uid://ck3wmxq2pgypg" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_008.png" id="9_m0hf4"]
+[ext_resource type="Texture2D" uid="uid://c6y5n2n3krrrb" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_009.png" id="10_qf7sc"]
+[ext_resource type="Texture2D" uid="uid://c01wlhsq18ny" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_010.png" id="11_qww6y"]
+[ext_resource type="Texture2D" uid="uid://ovv330br1l20" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_011.png" id="12_cqa6s"]
+[ext_resource type="Texture2D" uid="uid://dwfgsybpmmhet" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_012.png" id="13_0whs1"]
+[ext_resource type="Texture2D" uid="uid://kwok3pttabc5" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_013.png" id="14_h8mtk"]
+[ext_resource type="Texture2D" uid="uid://broeuarb87vru" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_014.png" id="15_wad60"]
+[ext_resource type="Texture2D" uid="uid://bv7wxo2jfhbqm" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_015.png" id="16_ecftq"]
+[ext_resource type="Texture2D" uid="uid://byk3x6d83efg1" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_016.png" id="17_nq4up"]
+[ext_resource type="Texture2D" uid="uid://dj4issvx06krm" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_017.png" id="18_sleea"]
+[ext_resource type="Texture2D" uid="uid://dixf8527868qi" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_018.png" id="19_fde3s"]
+[ext_resource type="Texture2D" uid="uid://tomagd335xff" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_019.png" id="20_5xl3j"]
+[ext_resource type="Texture2D" uid="uid://b6702y6gs5uvl" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_020.png" id="21_tvvqt"]
+[ext_resource type="Texture2D" uid="uid://dve2jw2ulpv78" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_021.png" id="22_u5wxi"]
+[ext_resource type="Texture2D" uid="uid://cf6gtj27sw1gh" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_022.png" id="23_qjxxh"]
+[ext_resource type="Texture2D" uid="uid://15ndtjlvupui" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_023.png" id="24_je2jd"]
+[ext_resource type="Texture2D" uid="uid://bjytnw1kluo6b" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_024.png" id="25_et34n"]
+[ext_resource type="Texture2D" uid="uid://d2w5k5xkd5wwt" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_025.png" id="26_f4573"]
+[ext_resource type="Texture2D" uid="uid://fp5df0jkqpmn" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_026.png" id="27_na52t"]
+[ext_resource type="Texture2D" uid="uid://dkl7fhllbbpyh" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_027.png" id="28_2v150"]
+[ext_resource type="Texture2D" uid="uid://cd8dq7oa13m1n" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_028.png" id="29_78fck"]
+[ext_resource type="Texture2D" uid="uid://dymkvxlm0qqy3" path="res://Assets/VFX/VFX Free Pack(1)/Effect_Anima/30fps/Frames/Effect_Anima_1/Effect_Anima_1_029.png" id="30_lrp3b"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdasi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_l4hx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_krk1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_23hjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0jtpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qrjih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_huqpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bipyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ibcas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_m0hf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_qf7sc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qww6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cqa6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_0whs1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_h8mtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_wad60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ecftq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_nq4up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_sleea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_fde3s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5xl3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tvvqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_u5wxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_qjxxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_je2jd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_et34n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_f4573")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_na52t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_2v150")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_78fck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_lrp3b")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProjectileImpact" type="AnimatedSprite2D" unique_id=795069451]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_mdasi")
+frame_progress = 0.77179986
+speed_scale = 10.0
+script = ExtResource("4_2coex")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

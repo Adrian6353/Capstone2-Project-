@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dg0iefbxq6a65"
+path="res://.godot/imported/Blacksmithing 1-1.wav-cfe828496970ad42f6b000f9c7e6000a.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Packs/(Not A Placeholder) Free Sounds Pack/Blacksmithing 1-1.wav"
+dest_files=["res://.godot/imported/Blacksmithing 1-1.wav-cfe828496970ad42f6b000f9c7e6000a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

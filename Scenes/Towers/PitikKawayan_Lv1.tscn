@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://d03gbhjg04nxu"]
+
+[ext_resource type="Script" path="res://Scenes/Towers/PitikKawayan.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dw72xm8iv3n8d" path="res://Assets/Towers/PitikKawayan_Lv1.png" id="3_meb0x"]
+[ext_resource type="Texture2D" uid="uid://dw72xm8iv3n8d" path="res://Assets/Towers/PitikKawayan_Lv1.png" id="3_tower"]
+[ext_resource type="Texture2D" uid="uid://cnwtl2ddjssjb" path="res://Assets/Effects/arrow.png" id="4_arrow"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_00Pit"]
+radius = 250.0
+
+[sub_resource type="Animation" id="Animation_00Pit"]
+resource_name = "Fire"
+length = 0.1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tower/Muzzle/MuzzleFlash:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_reset_00Pit"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tower/Muzzle/MuzzleFlash:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_00Pit"]
+_data = {
+&"Fire": SubResource("Animation_00Pit"),
+&"RESET": SubResource("Animation_reset_00Pit")
+}
+
+[node name="Tower" type="Node2D" unique_id=654347206]
+script = ExtResource("1_script")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1749992510]
+visible = false
+texture = ExtResource("3_tower")
+
+[node name="Tower" type="Sprite2D" parent="." unique_id=1776862341]
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("3_meb0x")
+
+[node name="Muzzle" type="Marker2D" parent="Tower" unique_id=139246600]
+
+[node name="MuzzleFlash" type="Sprite2D" parent="Tower/Muzzle" unique_id=201228914]
+visible = false
+scale = Vector2(10, 10)
+texture = ExtResource("4_arrow")
+
+[node name="Range" type="Area2D" parent="." unique_id=783536978]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=1231940656]
+shape = SubResource("CircleShape2D_00Pit")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2147379198]
+libraries/ = SubResource("AnimationLibrary_00Pit")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://tooltip_display"]
+
+[ext_resource type="Script" path="res://Scenes/UIScenes/tooltip_display.gd" id="1_script"]
+[ext_resource type="FontFile" uid="uid://c2ohudc0o61ii" path="res://Resources/Fonts/kp_40_o1.tres" id="2_font_large"]
+[ext_resource type="FontFile" uid="uid://eaaodabbyi62" path="res://Resources/Fonts/kfn256.tres" id="3_font_small"]
+
+[node name="TooltipDisplay" type="CanvasLayer"]
+script = ExtResource("1_script")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+custom_minimum_size = Vector2(250, 0)
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 260.0
+offset_bottom = 200.0
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="NameLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_font_large")
+theme_override_font_sizes/font_size = 20
+text = "Tower Name"
+custom_minimum_size = Vector2(0, 30)
+
+[node name="RarityLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_font_small")
+theme_override_font_sizes/font_size = 11
+text = "COMMON"
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="DescriptionLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_font_small")
+theme_override_font_sizes/font_size = 14
+text = "Description"
+autowrap_mode = 3
+
+[node name="StatsContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="CategoryLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_font_small")
+theme_override_font_sizes/font_size = 14
+text = "Type: Projectile"
+
+[node name="CostLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_font_small")
+theme_override_font_sizes/font_size = 14
+text = "Cost: 0"
+
+[node name="DamageLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_font_small")
+theme_override_font_sizes/font_size = 14
+text = "Damage: 0"
+
+[node name="RangeLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_font_small")
+theme_override_font_sizes/font_size = 14
+text = "Range: 0"
+
+[node name="FireRateLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/StatsContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_font_small")
+theme_override_font_sizes/font_size = 14
+text = "Fire Rate: Normal"
+

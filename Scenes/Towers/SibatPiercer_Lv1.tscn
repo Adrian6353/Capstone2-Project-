@@ -1,0 +1,68 @@
+; ============================================================================
+; TOWER: SibatPiercer
+; Family: SibatPiercer | Level: 1/3 | Rarity: Legendary
+; Base Tower: SibatPiercer
+; ============================================================================
+[gd_scene format=3 uid="uid://024Sibat"]
+
+[ext_resource type="Script" path="res://Scenes/Towers/SibatPiercer.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://Assets/Towers/Sibat Piercer Lv.1.png" id="2_base"]
+[ext_resource type="Texture2D" path="res://Assets/Towers/Sibat Piercer Lv.1.png" id="3_tower"]
+[ext_resource type="Texture2D" path="res://Assets/Effects/arrow.png" id="4_arrow"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_24Sib"]
+radius = 400.0
+
+[sub_resource type="Animation" id="Animation_24Sib"]
+resource_name = "Fire"
+length = 0.1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tower/Muzzle/MuzzleFlash:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {"times": PackedFloat32Array(0, 0.1), "transitions": PackedFloat32Array(1, 1), "update": 1, "values": [true, false]}
+
+[sub_resource type="Animation" id="Animation_reset_24Sib"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Tower/Muzzle/MuzzleFlash:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {"times": PackedFloat32Array(0), "transitions": PackedFloat32Array(1), "update": 1, "values": [false]}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_24Sib"]
+_data = {"Fire": SubResource("Animation_24Sib"), "RESET": SubResource("Animation_reset_24Sib")}
+
+[node name="Tower" type="Node2D"]
+scale = Vector2(0.12, 0.12)
+script = ExtResource("1_script")
+
+[node name="Base" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_base")
+
+[node name="Tower" type="Sprite2D" parent="."]
+texture = ExtResource("3_tower")
+
+[node name="Muzzle" type="Marker2D" parent="Tower"]
+
+[node name="MuzzleFlash" type="Sprite2D" parent="Tower/Muzzle"]
+visible = false
+scale = Vector2(10, 10)
+texture = ExtResource("4_arrow")
+
+[node name="Range" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range"]
+shape = SubResource("CircleShape2D_24Sib")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {"": SubResource("AnimationLibrary_24Sib")}
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

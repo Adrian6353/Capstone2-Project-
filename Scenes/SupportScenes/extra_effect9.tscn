@@ -1,0 +1,260 @@
+[gd_scene format=3 uid="uid://c16ka5ru16q4l"]
+
+[ext_resource type="Texture2D" uid="uid://ckay656coj50h" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_000.png" id="1_oilrg"]
+[ext_resource type="Texture2D" uid="uid://kablx48l1h34" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_001.png" id="2_k5u6t"]
+[ext_resource type="Texture2D" uid="uid://nsc4cbmmny7k" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_002.png" id="3_einn6"]
+[ext_resource type="Script" uid="uid://vkr3b2soppb1" path="res://Scenes/SupportScenes/projectile_impact.gd" id="4_knhac"]
+[ext_resource type="Texture2D" uid="uid://bowg2o4elqgj4" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_003.png" id="4_m8ony"]
+[ext_resource type="Texture2D" uid="uid://b1qvbq4msqvbe" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_004.png" id="5_ef0qb"]
+[ext_resource type="Texture2D" uid="uid://dgmsrqhjj7iww" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_005.png" id="6_0en7n"]
+[ext_resource type="Texture2D" uid="uid://v0ryxe4g8gwt" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_006.png" id="7_t1mr3"]
+[ext_resource type="Texture2D" uid="uid://bisuc4lschnv4" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_007.png" id="8_b7s1t"]
+[ext_resource type="Texture2D" uid="uid://d4ls1hj2d4a28" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_008.png" id="9_0163n"]
+[ext_resource type="Texture2D" uid="uid://cjxfoju2h4dpi" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_009.png" id="10_4xphk"]
+[ext_resource type="Texture2D" uid="uid://bnb867c1305j8" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_010.png" id="11_nnxga"]
+[ext_resource type="Texture2D" uid="uid://bfqlp5am5ib7o" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_011.png" id="12_rrsro"]
+[ext_resource type="Texture2D" uid="uid://b1iia6xeooxhg" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_012.png" id="13_l65cp"]
+[ext_resource type="Texture2D" uid="uid://6oqlqaahsehc" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_013.png" id="14_offjo"]
+[ext_resource type="Texture2D" uid="uid://chk8fhv0vqn27" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_014.png" id="15_4kujf"]
+[ext_resource type="Texture2D" uid="uid://c0mmxieb3tmvd" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_015.png" id="16_twbk4"]
+[ext_resource type="Texture2D" uid="uid://dcjni82b44k6m" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_016.png" id="17_icrsf"]
+[ext_resource type="Texture2D" uid="uid://cowuv3ghlwkak" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_017.png" id="18_7vnao"]
+[ext_resource type="Texture2D" uid="uid://cvqvcddft41ax" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_018.png" id="19_46lgm"]
+[ext_resource type="Texture2D" uid="uid://cmurgtp7v64ot" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_019.png" id="20_kcp1v"]
+[ext_resource type="Texture2D" uid="uid://dwc1llbd4hyh8" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_020.png" id="21_7ybc0"]
+[ext_resource type="Texture2D" uid="uid://k7oa3gr57fuq" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_021.png" id="22_at635"]
+[ext_resource type="Texture2D" uid="uid://bh0ywiyxor74w" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_022.png" id="23_hn0c7"]
+[ext_resource type="Texture2D" uid="uid://dkk1lwiqbw860" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_023.png" id="24_m1088"]
+[ext_resource type="Texture2D" uid="uid://cfd8kro2n1hor" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_024.png" id="25_qqjtp"]
+[ext_resource type="Texture2D" uid="uid://bqnmkdxygr1jb" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_025.png" id="26_vs2cn"]
+[ext_resource type="Texture2D" uid="uid://dbooq5v8a5ilc" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_026.png" id="27_v6go3"]
+[ext_resource type="Texture2D" uid="uid://bcj8s7uoxvlep" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_027.png" id="28_1e0d5"]
+[ext_resource type="Texture2D" uid="uid://diqk3c61wuhe5" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_028.png" id="29_fuorc"]
+[ext_resource type="Texture2D" uid="uid://8pgvm4ufvrny" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_029.png" id="30_e3qx6"]
+[ext_resource type="Texture2D" uid="uid://dtrxkljtwhu65" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_030.png" id="31_nl62s"]
+[ext_resource type="Texture2D" uid="uid://bjcpku2hnhojh" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_031.png" id="32_67jhf"]
+[ext_resource type="Texture2D" uid="uid://df1q0d0xisunp" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_032.png" id="33_7w5sq"]
+[ext_resource type="Texture2D" uid="uid://c4s04sum5ceme" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_033.png" id="34_i31y5"]
+[ext_resource type="Texture2D" uid="uid://cm7hpu6q0ykhn" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_034.png" id="35_wvjxe"]
+[ext_resource type="Texture2D" uid="uid://ja6yphl3hgh1" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_035.png" id="36_pnsna"]
+[ext_resource type="Texture2D" uid="uid://miw50qrf3l73" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_036.png" id="37_kecip"]
+[ext_resource type="Texture2D" uid="uid://cg3jcd54k5ud1" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_037.png" id="38_2n16j"]
+[ext_resource type="Texture2D" uid="uid://w30a8gxqo2q6" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_038.png" id="39_368y1"]
+[ext_resource type="Texture2D" uid="uid://bgfhquxwsfdhq" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_039.png" id="40_a5xhf"]
+[ext_resource type="Texture2D" uid="uid://cu8looyj4srbm" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_040.png" id="41_w02qs"]
+[ext_resource type="Texture2D" uid="uid://b80ap0brda6mv" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_041.png" id="42_nqygq"]
+[ext_resource type="Texture2D" uid="uid://celulp8b2t4te" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_042.png" id="43_dihkd"]
+[ext_resource type="Texture2D" uid="uid://dwqr5ureyvvy2" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_043.png" id="44_jpcb4"]
+[ext_resource type="Texture2D" uid="uid://dsv8pghkuo2gb" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_044.png" id="45_nsll8"]
+[ext_resource type="Texture2D" uid="uid://bwmxw2vq7q4ul" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_045.png" id="46_nndpe"]
+[ext_resource type="Texture2D" uid="uid://cfp1a7oo3cw0k" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_046.png" id="47_c0gq5"]
+[ext_resource type="Texture2D" uid="uid://8gmotgjnhs7a" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_047.png" id="48_y3jy0"]
+[ext_resource type="Texture2D" uid="uid://bw4837mtbxke8" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_048.png" id="49_7q38u"]
+[ext_resource type="Texture2D" uid="uid://brqlu0iwqastr" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_049.png" id="50_h4fr7"]
+[ext_resource type="Texture2D" uid="uid://oxodrjdwoh1j" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_050.png" id="51_0ib6k"]
+[ext_resource type="Texture2D" uid="uid://b6bbtf27bkq4m" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_051.png" id="52_5p7ux"]
+[ext_resource type="Texture2D" uid="uid://cam2mpd7y0lfi" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_052.png" id="53_ul25l"]
+[ext_resource type="Texture2D" uid="uid://bgo7u5msmyjf6" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_053.png" id="54_i1fhq"]
+[ext_resource type="Texture2D" uid="uid://l7cadfnpyj28" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_054.png" id="55_f8pcu"]
+[ext_resource type="Texture2D" uid="uid://dmvq35xn3fokl" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_055.png" id="56_8pphw"]
+[ext_resource type="Texture2D" uid="uid://dewui3xusn54h" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_056.png" id="57_jjsqf"]
+[ext_resource type="Texture2D" uid="uid://bo6ybl3pu87rf" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_057.png" id="58_t8mmk"]
+[ext_resource type="Texture2D" uid="uid://dehkbu0shh5jc" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_058.png" id="59_ypcef"]
+[ext_resource type="Texture2D" uid="uid://b5ob0o6xh1dg8" path="res://Assets/VFX/VFX Free Pack(1)/Effect_TheVortex/60fps/Frames/Effect_TheVortex_1/Effect_TheVortex_1_059.png" id="60_8pfsk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdasi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oilrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_k5u6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_einn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_m8ony")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ef0qb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0en7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_t1mr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_b7s1t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0163n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4xphk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nnxga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rrsro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_l65cp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_offjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4kujf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_twbk4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_icrsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7vnao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_46lgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kcp1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_7ybc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_at635")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_hn0c7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_m1088")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_qqjtp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_vs2cn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_v6go3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_1e0d5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_fuorc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_e3qx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_nl62s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_67jhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_7w5sq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_i31y5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_wvjxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_pnsna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_kecip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_2n16j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_368y1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_a5xhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_w02qs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_nqygq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_dihkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_jpcb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_nsll8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_nndpe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_c0gq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_y3jy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_7q38u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_h4fr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_0ib6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_5p7ux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_ul25l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_i1fhq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_f8pcu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_8pphw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_jjsqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_t8mmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_ypcef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_8pfsk")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProjectileImpact" type="AnimatedSprite2D" unique_id=795069451]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_mdasi")
+frame_progress = 0.7280135
+speed_scale = 3.5
+script = ExtResource("4_knhac")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://nwv6ddejkpr4"]
+
+[ext_resource type="Texture2D" uid="uid://d3iqkiha7s6vw" path="res://Assets/UI/Art/main_menu_background.png" id="2_15g01"]
+[ext_resource type="Script" uid="uid://bntfk3ky4rwmh" path="res://Scenes/UIScenes/main_menu.gd" id="5_main_menu_script"]
+[ext_resource type="AudioStream" uid="uid://csxv5iem6rdp1" path="res://Assets/Audio/Music/MainMenu-TitleScreenMusic.mp3" id="6_menu_music"]
+
+[node name="MainMenu" type="Control" unique_id=1450363485]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("5_main_menu_script")
+
+[node name="Background" type="TextureRect" parent="." unique_id=311299279]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_15g01")
+stretch_mode = 0
+
+[node name="M" type="MarginContainer" parent="." unique_id=52848571]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 51.0
+offset_top = 59.0
+offset_right = -49.0
+offset_bottom = -41.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VB" type="VBoxContainer" parent="M" unique_id=928921416]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="NewGame" type="Button" parent="M/VB" unique_id=2118967171]
+custom_minimum_size = Vector2(430, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "New Game"
+
+[node name="CardHunt" type="Button" parent="M/VB" unique_id=2118967172]
+visible = false
+custom_minimum_size = Vector2(430, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Card Hunt Mode"
+
+[node name="CoOp" type="Button" parent="M/VB" unique_id=1111222333]
+custom_minimum_size = Vector2(430, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Co-op Mode"
+
+[node name="Gacha" type="Button" parent="M/VB" unique_id=750071873]
+custom_minimum_size = Vector2(430, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "✦ Gacha"
+
+[node name="Codex" type="Button" parent="M/VB" unique_id=748504560]
+custom_minimum_size = Vector2(430, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Codex"
+
+[node name="Leaderboard" type="Button" parent="M/VB" unique_id=748504569]
+custom_minimum_size = Vector2(430, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Leaderboard"
+
+[node name="Settings" type="Button" parent="M/VB" unique_id=234202409]
+custom_minimum_size = Vector2(430, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Settings"
+
+[node name="About" type="Button" parent="M/VB" unique_id=1142223990]
+custom_minimum_size = Vector2(430, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "About"
+
+[node name="Quit" type="Button" parent="M/VB" unique_id=1257074278]
+custom_minimum_size = Vector2(430, 70)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Quit"
+
+[node name="MenuMusic" type="AudioStreamPlayer" parent="." unique_id=721472066]
+stream = ExtResource("6_menu_music")
+volume_db = -6.0
+autoplay = false
+
+[connection signal="mouse_entered" from="M/VB/NewGame" to="." method="_on_button_hover"]
+[connection signal="pressed" from="M/VB/NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="mouse_entered" from="M/VB/CoOp" to="." method="_on_button_hover"]
+[connection signal="pressed" from="M/VB/CoOp" to="." method="_on_coop_pressed"]
+[connection signal="mouse_entered" from="M/VB/Gacha" to="." method="_on_button_hover"]
+[connection signal="pressed" from="M/VB/Gacha" to="." method="_on_gacha_pressed"]
+[connection signal="mouse_entered" from="M/VB/Codex" to="." method="_on_button_hover"]
+[connection signal="pressed" from="M/VB/Codex" to="." method="_on_codex_pressed"]
+[connection signal="mouse_entered" from="M/VB/Leaderboard" to="." method="_on_button_hover"]
+[connection signal="pressed" from="M/VB/Leaderboard" to="." method="_on_leaderboard_pressed"]
+[connection signal="mouse_entered" from="M/VB/Settings" to="." method="_on_button_hover"]
+[connection signal="pressed" from="M/VB/Settings" to="." method="_on_settings_pressed"]
+[connection signal="mouse_entered" from="M/VB/About" to="." method="_on_button_hover"]
+[connection signal="pressed" from="M/VB/About" to="." method="_on_about_pressed"]
+[connection signal="mouse_entered" from="M/VB/Quit" to="." method="_on_button_hover"]
+[connection signal="pressed" from="M/VB/Quit" to="." method="_on_quit_pressed"]

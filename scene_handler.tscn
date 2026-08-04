@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b7bt8p4lxwn6t"]
+
+[ext_resource type="Script" uid="uid://diwm55esvy24o" path="res://scene_handler.gd" id="1_sy2fw"]
+[ext_resource type="PackedScene" uid="uid://nwv6ddejkpr4" path="res://Scenes/UIScenes/main_menu.tscn" id="2_qjdn2"]
+
+[node name="SceneHandler" type="Node" unique_id=1839840645]
+script = ExtResource("1_sy2fw")
+
+[node name="MainMenu" parent="." unique_id=1450363485 instance=ExtResource("2_qjdn2")]

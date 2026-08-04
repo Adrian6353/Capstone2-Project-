@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cpwfp41egaij6"]
+
+[ext_resource type="Texture2D" uid="uid://cn5wdcockcxeq" path="res://Assets/VFX/Pixel Art Skill Animations - Lightning/VFX5/Frames/lightning_skill5_frame1.png" id="1_0utyo"]
+[ext_resource type="Texture2D" uid="uid://b0twrnbb8o1r2" path="res://Assets/VFX/Pixel Art Skill Animations - Lightning/VFX5/Frames/lightning_skill5_frame2.png" id="2_7vwo3"]
+[ext_resource type="Texture2D" uid="uid://c6cqnnhd02xjr" path="res://Assets/VFX/Pixel Art Skill Animations - Lightning/VFX5/Frames/lightning_skill5_frame3.png" id="3_yoeu4"]
+[ext_resource type="Texture2D" uid="uid://b766sl2egila1" path="res://Assets/VFX/Pixel Art Skill Animations - Lightning/VFX5/Frames/lightning_skill5_frame4.png" id="4_5srg0"]
+[ext_resource type="Script" uid="uid://vkr3b2soppb1" path="res://Scenes/SupportScenes/projectile_impact.gd" id="4_yoeu4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdasi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0utyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7vwo3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yoeu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5srg0")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProjectileImpact" type="AnimatedSprite2D" unique_id=795069451]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_mdasi")
+frame_progress = 0.08025281
+speed_scale = 4.0
+script = ExtResource("4_yoeu4")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

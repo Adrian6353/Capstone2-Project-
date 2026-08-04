@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://csgbtrm3h422i"]
+
+[ext_resource type="Texture2D" uid="uid://dx2wrw5hxcf2c" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame1.png" id="1_a5chx"]
+[ext_resource type="Texture2D" uid="uid://ym8vp72tkehn" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame2.png" id="2_54hrr"]
+[ext_resource type="Texture2D" uid="uid://kt2qnp87um87" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame3.png" id="3_ybkpv"]
+[ext_resource type="Texture2D" uid="uid://mdptdqc2rnll" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame4.png" id="4_h8m81"]
+[ext_resource type="Script" uid="uid://vkr3b2soppb1" path="res://Scenes/SupportScenes/projectile_impact.gd" id="4_u4acp"]
+[ext_resource type="Texture2D" uid="uid://bv801q7umi2o0" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame5.png" id="5_ofuk3"]
+[ext_resource type="Texture2D" uid="uid://ulikdbno5113" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame6.png" id="6_ws3pc"]
+[ext_resource type="Texture2D" uid="uid://c2p8lheg5ei7i" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame7.png" id="7_vx6ni"]
+[ext_resource type="Texture2D" uid="uid://bnksk6ao2hk8c" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame8.png" id="8_h01wm"]
+[ext_resource type="Texture2D" uid="uid://cs5gvj6pa4axp" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame9.png" id="9_mfv7k"]
+[ext_resource type="Texture2D" uid="uid://pfknp2xps28u" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame10.png" id="10_5hcnp"]
+[ext_resource type="Texture2D" uid="uid://cnjimsv1gjsw2" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame11.png" id="11_16rib"]
+[ext_resource type="Texture2D" uid="uid://bt8sapet8cu8n" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame12.png" id="12_yr6ok"]
+[ext_resource type="Texture2D" uid="uid://b112qk6ycld1i" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame13.png" id="13_o57rk"]
+[ext_resource type="Texture2D" uid="uid://l40hk2aa06y2" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame14.png" id="14_6rrfh"]
+[ext_resource type="Texture2D" uid="uid://2v0q0psvskge" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame15.png" id="15_8htv7"]
+[ext_resource type="Texture2D" uid="uid://hcfvualhckh5" path="res://Assets/VFX/Pixel Art Animations - Paladin - FREE Version/VFX 3/Frames/paladin_skill3_frame16.png" id="16_tib5d"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdasi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_a5chx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_54hrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ybkpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_h8m81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ofuk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ws3pc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vx6ni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_h01wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mfv7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5hcnp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_16rib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_yr6ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_o57rk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_6rrfh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_8htv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_tib5d")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProjectileImpact" type="AnimatedSprite2D" unique_id=795069451]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_mdasi")
+frame_progress = 0.50086933
+speed_scale = 2.0
+script = ExtResource("4_u4acp")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

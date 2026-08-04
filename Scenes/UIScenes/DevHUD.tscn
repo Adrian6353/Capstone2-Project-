@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://Scenes/UIScenes/DevHUD.gd" id="1"]
+
+[node name="DevHUD" type="PanelContainer"]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 12
+offset_top = -280
+offset_right = 320
+offset_bottom = -12
+script = ExtResource("1")

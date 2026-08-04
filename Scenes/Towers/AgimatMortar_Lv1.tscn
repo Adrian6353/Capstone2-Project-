@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://0co53iqq6it4"]
+
+[ext_resource type="Script" uid="uid://cnwqbwgk1e75w" path="res://Scenes/Towers/AgimatMortar.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://bf5vk2t34u0aw" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/FireBomb/Fire-bomb8.png" id="3_430ob"]
+[ext_resource type="Texture2D" uid="uid://qx1x4vpftx74" path="res://Assets/Towers/Agimat Mortar Lv.1.png" id="3_tower"]
+[ext_resource type="Texture2D" uid="uid://bar7udnvgp86k" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/FireBomb/Fire-bomb9.png" id="4_stu06"]
+[ext_resource type="Texture2D" uid="uid://dmnd7uclhsk43" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/FireBomb/Fire-bomb11.png" id="5_vmq0c"]
+[ext_resource type="Texture2D" uid="uid://ds70072726llk" path="res://Assets/VFX/Magic Pack 9 files/Magic Pack 9 files/sprites/FireBomb/Fire-bomb13.png" id="6_oa1rm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3bwyr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_430ob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_stu06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vmq0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_oa1rm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_12Agi"]
+radius = 600.0
+
+[sub_resource type="Animation" id="Animation_12Agi"]
+resource_name = "Fire"
+length = 0.1
+step = 0.1
+
+[sub_resource type="Animation" id="Animation_reset_12Agi"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_12Agi"]
+_data = {
+&"Fire": SubResource("Animation_12Agi"),
+&"RESET": SubResource("Animation_reset_12Agi")
+}
+
+[node name="Tower" type="Node2D" unique_id=1859793422]
+scale = Vector2(0.12, 0.12)
+script = ExtResource("1_script")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1010290878]
+visible = false
+texture = ExtResource("3_tower")
+
+[node name="Tower" type="Sprite2D" parent="." unique_id=1001895841]
+texture = ExtResource("3_tower")
+
+[node name="Muzzle" type="Marker2D" parent="Tower" unique_id=421515040]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=333881460]
+visible = false
+position = Vector2(-216.66667, -291.66666)
+rotation = -0.9215338
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_3bwyr")
+speed_scale = 2.0
+
+[node name="Range" type="Area2D" parent="." unique_id=597229898]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=1500817664]
+shape = SubResource("CircleShape2D_12Agi")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1181871950]
+libraries/ = SubResource("AnimationLibrary_12Agi")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

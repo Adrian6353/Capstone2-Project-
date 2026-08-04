@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://csgvdc8tc74gq"]
+
+[ext_resource type="Script" uid="uid://d0lskp34bjvjc" path="res://Scenes/Enemies/Mambabarang.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dvde04df4gmb5" path="res://Assets/Enemies/Mambabarang.png" id="2_sprite"]
+[ext_resource type="Texture2D" uid="uid://dc43xtpkc6fwf" path="res://Assets/UI/HPbar.jpg" id="3_hpbar"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(63.5, 81)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1"]
+load_path = "res://.godot/imported/HPbar.jpg-bad7334a22516e05838d7d3f0257fd27.ctex"
+
+[node name="Mambabarang" type="PathFollow2D" unique_id=1]
+loop = false
+script = ExtResource("1_script")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=2]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=3]
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("2_sprite")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=4]
+position = Vector2(-0.25, 0)
+shape = SubResource("RectangleShape2D_1")
+
+[node name="HealthBar" type="TextureProgressBar" parent="." unique_id=5]
+offset_left = -30.0
+offset_top = -50.0
+offset_right = 30.0
+offset_bottom = -44.0
+value = 100.0
+nine_patch_stretch = true
+texture_under = SubResource("CompressedTexture2D_1")
+texture_progress = ExtResource("3_hpbar")
+tint_under = Color(0.18072194, 0.18072197, 0.18072197, 1)
+tint_progress = Color(0.37924284, 0.99999994, 0.3788229, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Impact" type="Marker2D" parent="." unique_id=6]

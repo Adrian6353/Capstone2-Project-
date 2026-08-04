@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://curhnbvjswbkm"]
+
+[ext_resource type="Script" uid="uid://brh6g5hxsa157" path="res://Scenes/Towers/KidlatWeaver.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://cvoxsacq2y5pf" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_1.png" id="3_fhqi8"]
+[ext_resource type="Texture2D" uid="uid://8wvgy6x58tn0" path="res://Assets/Towers/Kidlat Weaver Lv1.png" id="3_tower"]
+[ext_resource type="Texture2D" uid="uid://ceiah7br0l5ii" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_2.png" id="4_eik2g"]
+[ext_resource type="Texture2D" uid="uid://eshm0wcerfu4" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_3.png" id="5_yyx4c"]
+[ext_resource type="Texture2D" uid="uid://b1atyukfwu6y5" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_4.png" id="6_s87jt"]
+[ext_resource type="Texture2D" uid="uid://cfbnbts8neuoh" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_5.png" id="7_r78hw"]
+[ext_resource type="Texture2D" uid="uid://bpr573ou0hd44" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_6.png" id="8_dd4q8"]
+[ext_resource type="Texture2D" uid="uid://c57w2rmejatr4" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_7.png" id="9_ty1oc"]
+[ext_resource type="Texture2D" uid="uid://c130ceckpkpla" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_8.png" id="10_ds5lu"]
+[ext_resource type="Texture2D" uid="uid://dyqiw1evvse06" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_9.png" id="11_qsa3w"]
+[ext_resource type="Texture2D" uid="uid://cdhcv3ifdbhtk" path="res://Assets/VFX/Free-Animated-Explosions/PNG/Explosion_5/Explosion_10.png" id="12_evbw6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kj4lb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_fhqi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_eik2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yyx4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s87jt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_r78hw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_dd4q8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ty1oc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ds5lu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qsa3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_evbw6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_21Kid"]
+radius = 350.0
+
+[sub_resource type="Animation" id="Animation_21Kid"]
+resource_name = "Fire"
+length = 0.1
+step = 0.1
+
+[sub_resource type="Animation" id="Animation_reset_21Kid"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_21Kid"]
+_data = {
+&"Fire": SubResource("Animation_21Kid"),
+&"RESET": SubResource("Animation_reset_21Kid")
+}
+
+[node name="Tower" type="Node2D" unique_id=1718136567]
+scale = Vector2(0.12, 0.12)
+script = ExtResource("1_script")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1326553714]
+visible = false
+texture = ExtResource("3_tower")
+
+[node name="Tower" type="Sprite2D" parent="." unique_id=1847248840]
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("3_tower")
+
+[node name="Muzzle" type="Marker2D" parent="Tower" unique_id=1236787825]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=410149929]
+position = Vector2(-2.3841858e-07, -121.42857)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_kj4lb")
+frame_progress = 0.2880777
+speed_scale = 2.0
+
+[node name="Range" type="Area2D" parent="." unique_id=1362744620]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=659626889]
+scale = Vector2(2.5, 2.5)
+shape = SubResource("CircleShape2D_21Kid")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=452463921]
+libraries/ = SubResource("AnimationLibrary_21Kid")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bcvay0vhdvbw"]
+
+[ext_resource type="Script" uid="uid://c0p8qgk7hvffo" path="res://Scenes/Towers/KampilanDefender.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://csoiu70vvbb6r" path="res://Assets/VFX/Pixel Art Animations - Warrior (FREE)/VFX 4/Frames/warrior_skill4_frame1.png" id="3_3by4t"]
+[ext_resource type="Texture2D" uid="uid://cs72e2e4b7xy0" path="res://Assets/Towers/Kampilan Defender Lv.2.png" id="3_tower"]
+[ext_resource type="Texture2D" uid="uid://d3xmr5x348cke" path="res://Assets/VFX/Pixel Art Animations - Warrior (FREE)/VFX 4/Frames/warrior_skill4_frame2.png" id="4_uacdf"]
+[ext_resource type="Texture2D" uid="uid://da5vhbmvohkco" path="res://Assets/VFX/Pixel Art Animations - Warrior (FREE)/VFX 4/Frames/warrior_skill4_frame3.png" id="5_4arjw"]
+[ext_resource type="Texture2D" uid="uid://bf3x3o8p2jb3s" path="res://Assets/VFX/Pixel Art Animations - Warrior (FREE)/VFX 4/Frames/warrior_skill4_frame4.png" id="6_ps0d1"]
+[ext_resource type="Texture2D" uid="uid://rfb6y5vt5pjx" path="res://Assets/VFX/Pixel Art Animations - Warrior (FREE)/VFX 4/Frames/warrior_skill4_frame5.png" id="7_rt0e8"]
+[ext_resource type="Texture2D" uid="uid://dy6a77vajk0yy" path="res://Assets/VFX/Pixel Art Animations - Warrior (FREE)/VFX 4/Frames/warrior_skill4_frame6.png" id="8_ldwsk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0ngk0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_3by4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_uacdf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_4arjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ps0d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_rt0e8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ldwsk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_04Hea"]
+radius = 120.0
+
+[sub_resource type="Animation" id="Animation_04Hea"]
+resource_name = "Fire"
+length = 0.1
+step = 0.1
+
+[sub_resource type="Animation" id="Animation_reset_04Hea"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_04Hea"]
+_data = {
+&"Fire": SubResource("Animation_04Hea"),
+&"RESET": SubResource("Animation_reset_04Hea")
+}
+
+[node name="Tower" type="Node2D" unique_id=667627363]
+scale = Vector2(0.12, 0.12)
+script = ExtResource("1_script")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=586006553]
+visible = false
+texture = ExtResource("3_tower")
+
+[node name="Tower" type="Sprite2D" parent="." unique_id=1300906923]
+texture = ExtResource("3_tower")
+
+[node name="Muzzle" type="Marker2D" parent="Tower" unique_id=127832129]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=697568052]
+position = Vector2(0, 124.99999)
+scale = Vector2(9, 9)
+sprite_frames = SubResource("SpriteFrames_0ngk0")
+frame_progress = 0.94155985
+speed_scale = 2.0
+
+[node name="Range" type="Area2D" parent="." unique_id=1560871618]
+scale = Vector2(3, 3)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=218764953]
+shape = SubResource("CircleShape2D_04Hea")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1697042383]
+libraries/ = SubResource("AnimationLibrary_04Hea")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

@@ -1,0 +1,269 @@
+[gd_scene format=3 uid="uid://d1mthdg6xkgol"]
+
+[ext_resource type="Script" uid="uid://c6pi8wuug1osb" path="res://Scenes/MainScenes/GameScene.gd" id="1_g2kuy"]
+[ext_resource type="Script" uid="uid://cy5a5o65iykru" path="res://Scenes/MainScenes/ui.gd" id="3_ibdpl"]
+[ext_resource type="Texture2D" uid="uid://bsrpf1gxe7lck" path="res://Assets/UI/Art/Gold_1.png" id="3_j856t"]
+[ext_resource type="FontFile" uid="uid://eaaodabbyi62" path="res://Resources/Fonts/kfn256.tres" id="4_j856t"]
+[ext_resource type="Texture2D" uid="uid://dv0d7grn3ffo4" path="res://Assets/UI/Art/Bronze_11.png" id="5_7ddxx"]
+[ext_resource type="Texture2D" uid="uid://dc43xtpkc6fwf" path="res://Assets/UI/HPbar.jpg" id="6_a7g65"]
+[ext_resource type="Texture2D" uid="uid://c5yxwoihs124y" path="res://Assets/Icons/forward.png" id="7_tcjp3"]
+[ext_resource type="Texture2D" uid="uid://dh4m6785kugrj" path="res://Assets/Icons/pause.png" id="8_br1xs"]
+[ext_resource type="Texture2D" uid="uid://yulo6jbvtyuw" path="res://Assets/Icons/fastForward.png" id="9_80vwl"]
+[ext_resource type="Texture2D" uid="uid://b31ba1hsfus8x" path="res://Assets/UI/Packs/kenney_game-icons/PNG/White/1x/door.png" id="10_h0y4r"]
+
+[node name="GameScene" type="Node2D" unique_id=1432510986]
+script = ExtResource("1_g2kuy")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1273817589]
+process_mode = 3
+script = ExtResource("3_ibdpl")
+
+[node name="HUD" type="Control" parent="UI" unique_id=1310503821]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="InfoBar" type="ColorRect" parent="UI/HUD" unique_id=469241588]
+self_modulate = Color(0, 0, 0, 0.47058824)
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 60.0
+grow_horizontal = 2
+size_flags_vertical = 3
+
+[node name="H" type="HBoxContainer" parent="UI/HUD/InfoBar" unique_id=1348199253]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 1
+offset_right = 1227.0
+offset_bottom = 701.0
+scale = Vector2(0.08, 0.08)
+pivot_offset = Vector2(300, 2)
+alignment = 1
+
+[node name="GoldIcon" type="TextureRect" parent="UI/HUD/InfoBar/H" unique_id=1146194413]
+custom_minimum_size = Vector2(120, 60)
+layout_mode = 2
+texture = ExtResource("3_j856t")
+expand_mode = 2
+
+[node name="P" type="Control" parent="UI/HUD/InfoBar/H" unique_id=1888339231]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="GoldAmount" type="Label" parent="UI/HUD/InfoBar/H" unique_id=1569617750]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_fonts/font = ExtResource("4_j856t")
+theme_override_font_sizes/font_size = 256
+text = "1000
+"
+horizontal_alignment = 2
+
+[node name="P2" type="Control" parent="UI/HUD/InfoBar/H" unique_id=1026638959]
+custom_minimum_size = Vector2(10000, 0)
+layout_mode = 2
+
+[node name="Health" type="TextureRect" parent="UI/HUD/InfoBar/H" unique_id=574049954]
+custom_minimum_size = Vector2(120, 60)
+layout_mode = 2
+texture = ExtResource("5_7ddxx")
+expand_mode = 2
+
+[node name="P3" type="Control" parent="UI/HUD/InfoBar/H" unique_id=1528749922]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="PlayerHPBar" type="TextureProgressBar" parent="UI/HUD/InfoBar/H" unique_id=2056658866]
+custom_minimum_size = Vector2(5000, 500)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+value = 100.0
+nine_patch_stretch = true
+texture_under = ExtResource("6_a7g65")
+texture_progress = ExtResource("6_a7g65")
+tint_under = Color(0.3771627, 0.37716255, 0.37716255, 1)
+tint_progress = Color(0, 1, 0.019607844, 1)
+
+[node name="WaveBar" type="VBoxContainer" parent="UI/HUD" unique_id=763011057]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -35.0
+offset_right = 90.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartWaveButton" type="Button" parent="UI/HUD/WaveBar" unique_id=1432510987 groups=["wave_buttons"]]
+custom_minimum_size = Vector2(180, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Start Wave"
+
+[node name="WavePreviewPanel" type="PanelContainer" parent="UI/HUD" unique_id=2000000001]
+custom_minimum_size = Vector2(80, 120)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -90.0
+offset_right = 90.0
+offset_bottom = 120.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/HUD/WavePreviewPanel" unique_id=2000000002]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/HUD/WavePreviewPanel/MarginContainer" unique_id=2000000003]
+layout_mode = 2
+
+[node name="WaveLabel" type="Label" parent="UI/HUD/WavePreviewPanel/MarginContainer/VBoxContainer" unique_id=2000000004]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "Wave: #"
+horizontal_alignment = 1
+
+[node name="EnemyPreview" type="Label" parent="UI/HUD/WavePreviewPanel/MarginContainer/VBoxContainer" unique_id=2000000005]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Next Enemy Wave"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="GameControls" type="HBoxContainer" parent="UI/HUD" unique_id=1849686247]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 1440.0
+offset_top = -264.0
+offset_right = 1980.0
+offset_bottom = -146.0
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/HUD/GameControls" unique_id=873132800]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="PausePlay" type="TextureButton" parent="UI/HUD/GameControls/MarginContainer" unique_id=195221573]
+process_mode = 3
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("7_tcjp3")
+texture_pressed = ExtResource("8_br1xs")
+stretch_mode = 5
+
+[node name="MarginContainer2" type="MarginContainer" parent="UI/HUD/GameControls" unique_id=31449983]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="SpeedUp" type="TextureButton" parent="UI/HUD/GameControls/MarginContainer2" unique_id=1040232528]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+texture_normal = ExtResource("9_80vwl")
+stretch_mode = 5
+
+[node name="MarginContainer4" type="MarginContainer" parent="UI/HUD/GameControls" unique_id=670140606]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="PauseMenu" type="TextureButton" parent="UI/HUD/GameControls/MarginContainer4" unique_id=912746961]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+texture_normal = ExtResource("10_h0y4r")
+stretch_mode = 5
+
+[node name="MarginContainer3" type="MarginContainer" parent="UI/HUD/GameControls" unique_id=1234567890]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 24
+
+[node name="HelpButton" type="Button" parent="UI/HUD/GameControls/MarginContainer3" unique_id=1234567891]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "?"
+
+[node name="CardBar" type="HBoxContainer" parent="UI/HUD" unique_id=635748519]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -164.0
+offset_top = -160.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="BambooTower" type="Button" parent="UI/HUD/CardBar" unique_id=673997758 groups=["build_buttons"]]
+visible = false
+custom_minimum_size = Vector2(80, 160)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/HUD/CardBar/BambooTower" unique_id=1664761127]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/HUD/CardBar/BambooTower/MarginContainer" unique_id=1271053146]
+layout_mode = 2
+alignment = 1
+
+[node name="Icon" type="TextureRect" parent="UI/HUD/CardBar/BambooTower/MarginContainer/VBoxContainer" unique_id=1271053145]
+custom_minimum_size = Vector2(60, 80)
+layout_mode = 2
+expand_mode = 2
+
+[node name="CostLabel" type="HBoxContainer" parent="UI/HUD/CardBar/BambooTower/MarginContainer/VBoxContainer" unique_id=401100374]
+custom_minimum_size = Vector2(60, 25)
+layout_mode = 2
+alignment = 1
+
+[node name="GoldIcon" type="TextureRect" parent="UI/HUD/CardBar/BambooTower/MarginContainer/VBoxContainer/CostLabel" unique_id=113001908]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = ExtResource("3_j856t")
+expand_mode = 1
+
+[node name="CostAmount" type="Label" parent="UI/HUD/CardBar/BambooTower/MarginContainer/VBoxContainer/CostLabel" unique_id=2078569000]
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "100"
+
+[node name="InGameHelp" type="CanvasLayer" parent="UI" unique_id=1800000000]
+
+[connection signal="pressed" from="UI/HUD/GameControls/MarginContainer/PausePlay" to="UI" method="_on_pause_play_pressed"]
+[connection signal="pressed" from="UI/HUD/GameControls/MarginContainer2/SpeedUp" to="UI" method="_on_speed_up_pressed"]
+[connection signal="pressed" from="UI/HUD/GameControls/MarginContainer4/PauseMenu" to="." method="_on_pause_menu_pressed"]
+[connection signal="pressed" from="UI/HUD/GameControls/MarginContainer3/HelpButton" to="UI" method="_on_help_button_pressed"]

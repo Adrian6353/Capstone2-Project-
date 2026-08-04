@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://1off4p72mibv"]
+
+[ext_resource type="Texture2D" uid="uid://b5pvao6pfrx7y" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_000.png" id="1_vf1n7"]
+[ext_resource type="Texture2D" uid="uid://d2nlcjpd55x3y" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_001.png" id="2_uopa5"]
+[ext_resource type="Texture2D" uid="uid://uimrjy1epnle" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_002.png" id="3_tpl1x"]
+[ext_resource type="Script" uid="uid://vkr3b2soppb1" path="res://Scenes/SupportScenes/projectile_impact.gd" id="4_ny52k"]
+[ext_resource type="Texture2D" uid="uid://xe6wsoaquiab" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_003.png" id="4_sm8xw"]
+[ext_resource type="Texture2D" uid="uid://cfqtb71ja86gr" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_004.png" id="5_km33j"]
+[ext_resource type="Texture2D" uid="uid://d0rwl35ji8k4u" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_005.png" id="6_ybm1c"]
+[ext_resource type="Texture2D" uid="uid://cdjdxh620loi8" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_006.png" id="7_44466"]
+[ext_resource type="Texture2D" uid="uid://bo2tjdbu5eyfy" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_007.png" id="8_iiyvy"]
+[ext_resource type="Texture2D" uid="uid://dbpyo6shdytxj" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_008.png" id="9_m7u5d"]
+[ext_resource type="Texture2D" uid="uid://dqv0g6e3yqeci" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_009.png" id="10_3bu1h"]
+[ext_resource type="Texture2D" uid="uid://m5mqhsxan1u3" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_010.png" id="11_mcrvo"]
+[ext_resource type="Texture2D" uid="uid://cgtbsocyu1aeg" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_011.png" id="12_irtxp"]
+[ext_resource type="Texture2D" uid="uid://c0fkdoiq6n6cc" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_012.png" id="13_mifbb"]
+[ext_resource type="Texture2D" uid="uid://cfddjgld26i3o" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_013.png" id="14_g2clj"]
+[ext_resource type="Texture2D" uid="uid://cy4iopcavk6vf" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_014.png" id="15_rw270"]
+[ext_resource type="Texture2D" uid="uid://crtw7wsqsehb6" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_015.png" id="16_ucc22"]
+[ext_resource type="Texture2D" uid="uid://cjwlbcb2bkwh4" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_016.png" id="17_nio4r"]
+[ext_resource type="Texture2D" uid="uid://bgpb2rn53yg2w" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_017.png" id="18_e3u3m"]
+[ext_resource type="Texture2D" uid="uid://5h2brcy8dxs" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_018.png" id="19_vhrbr"]
+[ext_resource type="Texture2D" uid="uid://baapq1dmvse3h" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_019.png" id="20_ak35k"]
+[ext_resource type="Texture2D" uid="uid://bhjgdxhee2cik" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_020.png" id="21_5gana"]
+[ext_resource type="Texture2D" uid="uid://dba0qv4tq3unq" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_021.png" id="22_exdg7"]
+[ext_resource type="Texture2D" uid="uid://cnk7ikce3aqhv" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_022.png" id="23_anbaa"]
+[ext_resource type="Texture2D" uid="uid://bn0acxckthagb" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_023.png" id="24_dl134"]
+[ext_resource type="Texture2D" uid="uid://t8k6xehmiik" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_024.png" id="25_15opu"]
+[ext_resource type="Texture2D" uid="uid://4jhnwnniminb" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_025.png" id="26_xfco5"]
+[ext_resource type="Texture2D" uid="uid://c1enqhv4ximgn" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_026.png" id="27_bewda"]
+[ext_resource type="Texture2D" uid="uid://bktyhn8p7pgmg" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_027.png" id="28_ej6ok"]
+[ext_resource type="Texture2D" uid="uid://b8hmxr38ak4po" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_028.png" id="29_fb467"]
+[ext_resource type="Texture2D" uid="uid://dyhj6r7vwi1l0" path="res://Assets/VFX/VFX Free Pack(1)/Effect_BigHit/30fps/Frames/Effect_BigHit_1/Effect_BigHit_1_029.png" id="30_dmnfv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mdasi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vf1n7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_uopa5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tpl1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sm8xw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_km33j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ybm1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_44466")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_iiyvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_m7u5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3bu1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mcrvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_irtxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_mifbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g2clj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_rw270")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ucc22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_nio4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_e3u3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_vhrbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ak35k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5gana")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_exdg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_anbaa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_dl134")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_15opu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xfco5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_bewda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ej6ok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_fb467")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_dmnfv")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="ProjectileImpact" type="AnimatedSprite2D" unique_id=795069451]
+position = Vector2(535, 117)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_mdasi")
+frame_progress = 0.8441713
+speed_scale = 6.0
+script = ExtResource("4_ny52k")
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

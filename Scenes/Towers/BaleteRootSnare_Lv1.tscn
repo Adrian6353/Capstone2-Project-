@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://b1dq8lytbl15t"]
+
+[ext_resource type="Script" uid="uid://ckqw0b0wk1g5y" path="res://Scenes/Towers/BaleteRootSnare.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://bptdf4sqmx4xc" path="res://Assets/VFX/Animatedfloorspikesgameasset--115g5e438p757d8f6j/keyframes/long_wood/long_wood_spike_01.png" id="3_rmqwo"]
+[ext_resource type="Texture2D" uid="uid://bao81nsqvv3ts" path="res://Assets/Towers/Lv.1 Balete Root-Snare.png" id="3_tower"]
+[ext_resource type="Texture2D" uid="uid://dys73fp81jekg" path="res://Assets/VFX/Animatedfloorspikesgameasset--115g5e438p757d8f6j/keyframes/long_wood/long_wood_spike_02.png" id="4_k1erq"]
+[ext_resource type="Texture2D" uid="uid://0ndfleetrnt1" path="res://Assets/VFX/Animatedfloorspikesgameasset--115g5e438p757d8f6j/keyframes/long_wood/long_wood_spike_03.png" id="5_td4mm"]
+[ext_resource type="Texture2D" uid="uid://bail1hh1y0i0b" path="res://Assets/VFX/Animatedfloorspikesgameasset--115g5e438p757d8f6j/keyframes/long_wood/long_wood_spike_04.png" id="6_02n43"]
+[ext_resource type="Texture2D" uid="uid://450ujtthmpuy" path="res://Assets/VFX/Animatedfloorspikesgameasset--115g5e438p757d8f6j/keyframes/long_wood/long_wood_spike_05.png" id="7_gujr2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hd5i0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_rmqwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_k1erq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_td4mm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_02n43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gujr2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_18Bel"]
+radius = 280.0
+
+[sub_resource type="Animation" id="Animation_18Bel"]
+resource_name = "Fire"
+length = 0.1
+step = 0.1
+
+[sub_resource type="Animation" id="Animation_reset_18Bel"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_18Bel"]
+_data = {
+&"Fire": SubResource("Animation_18Bel"),
+&"RESET": SubResource("Animation_reset_18Bel")
+}
+
+[node name="Tower" type="Node2D" unique_id=1483666069]
+scale = Vector2(0.12, 0.12)
+script = ExtResource("1_script")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=138409331]
+visible = false
+texture = ExtResource("3_tower")
+
+[node name="Tower" type="Sprite2D" parent="." unique_id=89299183]
+texture = ExtResource("3_tower")
+
+[node name="Muzzle" type="Marker2D" parent="Tower" unique_id=1429252879]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=1899485303]
+position = Vector2(-300, 266.6667)
+scale = Vector2(1.4596335, 1.4684657)
+sprite_frames = SubResource("SpriteFrames_hd5i0")
+frame_progress = 0.514614
+speed_scale = 2.0
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=1455164459]
+position = Vector2(-183.33334, 316.6667)
+scale = Vector2(1.4596335, 1.4684657)
+sprite_frames = SubResource("SpriteFrames_hd5i0")
+frame_progress = 0.44862124
+speed_scale = 2.0
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=662084029]
+position = Vector2(8.333334, 333.33337)
+scale = Vector2(1.4596335, 1.4684657)
+sprite_frames = SubResource("SpriteFrames_hd5i0")
+frame_progress = 0.36978716
+speed_scale = 2.0
+
+[node name="AnimatedSprite2D4" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=742765025]
+position = Vector2(183.33334, 308.33337)
+scale = Vector2(1.4596335, 1.4684657)
+sprite_frames = SubResource("SpriteFrames_hd5i0")
+frame_progress = 0.92923707
+speed_scale = 2.0
+
+[node name="AnimatedSprite2D5" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=1943910926]
+position = Vector2(299.99997, 258.33334)
+scale = Vector2(1.4596335, 1.4684657)
+sprite_frames = SubResource("SpriteFrames_hd5i0")
+frame_progress = 0.91308224
+speed_scale = 2.0
+
+[node name="Range" type="Area2D" parent="." unique_id=712588923]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=2001704953]
+shape = SubResource("CircleShape2D_18Bel")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1141851715]
+libraries/ = SubResource("AnimationLibrary_18Bel")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

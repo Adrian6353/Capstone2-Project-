@@ -1,0 +1,180 @@
+[gd_scene format=3 uid="uid://dgq87b2qignyw"]
+
+[ext_resource type="Script" uid="uid://b5g5ex8d6666u" path="res://Scenes/Towers/MutyaFocus.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://d0kdn26s35cy6" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_000.png" id="3_jfrra"]
+[ext_resource type="Texture2D" uid="uid://d3vt2aa2dtx8o" path="res://Assets/Towers/Mutya Focus Lv.3.png" id="3_tower"]
+[ext_resource type="Texture2D" uid="uid://g0oquf2vt8wj" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_001.png" id="4_r3nvg"]
+[ext_resource type="Texture2D" uid="uid://b5fuvdrh5jbco" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_002.png" id="5_s2xrn"]
+[ext_resource type="Texture2D" uid="uid://xy3tlwdtvqcg" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_003.png" id="6_lcf0s"]
+[ext_resource type="Texture2D" uid="uid://cofnxgfkmdii8" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_004.png" id="7_wd6ed"]
+[ext_resource type="Texture2D" uid="uid://cx3yujlc7a4d2" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_005.png" id="8_assii"]
+[ext_resource type="Texture2D" uid="uid://bjvltujocbicv" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_006.png" id="9_7538h"]
+[ext_resource type="Texture2D" uid="uid://4panw57werab" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_007.png" id="10_latx8"]
+[ext_resource type="Texture2D" uid="uid://c4u8id5lyc413" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_008.png" id="11_kbgq5"]
+[ext_resource type="Texture2D" uid="uid://d0j54esoktmkq" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_009.png" id="12_3jyt8"]
+[ext_resource type="Texture2D" uid="uid://c1hgso5muad8h" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_010.png" id="13_qbage"]
+[ext_resource type="Texture2D" uid="uid://bqxoraj2pnur5" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_011.png" id="14_nrpkf"]
+[ext_resource type="Texture2D" uid="uid://brr7l4isndsiw" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_012.png" id="15_jxann"]
+[ext_resource type="Texture2D" uid="uid://fnssc76daps7" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_013.png" id="16_g03uq"]
+[ext_resource type="Texture2D" uid="uid://cfqb0w18wdqvs" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_014.png" id="17_gj4cg"]
+[ext_resource type="Texture2D" uid="uid://diy0l63bccyje" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_015.png" id="18_jtg5l"]
+[ext_resource type="Texture2D" uid="uid://bql85q00gocwe" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_016.png" id="19_7cywh"]
+[ext_resource type="Texture2D" uid="uid://dow01s3bfljb7" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_017.png" id="20_ms0f1"]
+[ext_resource type="Texture2D" uid="uid://b1jxhf2nqq52k" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_018.png" id="21_r1cd8"]
+[ext_resource type="Texture2D" uid="uid://btepv0boc2phy" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_019.png" id="22_l11tc"]
+[ext_resource type="Texture2D" uid="uid://dx4g0q8s0gxi6" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_020.png" id="23_lym50"]
+[ext_resource type="Texture2D" uid="uid://de75cif3gtdn5" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_021.png" id="24_r0xcr"]
+[ext_resource type="Texture2D" uid="uid://cf0rxumrpfr8v" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_022.png" id="25_0lnnw"]
+[ext_resource type="Texture2D" uid="uid://c2dccwgsl6ubi" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_023.png" id="26_u7e5d"]
+[ext_resource type="Texture2D" uid="uid://x5817uab7475" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_024.png" id="27_nqchs"]
+[ext_resource type="Texture2D" uid="uid://b10l708pd5rsd" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_025.png" id="28_r7wqc"]
+[ext_resource type="Texture2D" uid="uid://c1lildy8tdokf" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_026.png" id="29_bldjl"]
+[ext_resource type="Texture2D" uid="uid://ipaoo1td4rdu" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_027.png" id="30_t4i3q"]
+[ext_resource type="Texture2D" uid="uid://cnx015f37ssxk" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_028.png" id="31_n6cj0"]
+[ext_resource type="Texture2D" uid="uid://lpx6jpte20xe" path="res://Assets/VFX/VFX Free Pack(1)/Effect_ElectricShield/30fps/Frames/Effect_ElectricShield_1/Effect_ElectricShield_1_029.png" id="32_4p3rn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_okxxo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_jfrra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_r3nvg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s2xrn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lcf0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wd6ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_assii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7538h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_latx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kbgq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_3jyt8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qbage")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nrpkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_jxann")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_g03uq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_gj4cg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_jtg5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7cywh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ms0f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_r1cd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_l11tc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_lym50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_r0xcr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0lnnw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_u7e5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_nqchs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_r7wqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_bldjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_t4i3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_n6cj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_4p3rn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_11Int"]
+radius = 500.0
+
+[sub_resource type="Animation" id="Animation_11Int"]
+resource_name = "Fire"
+length = 0.1
+step = 0.1
+
+[sub_resource type="Animation" id="Animation_reset_11Int"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_11Int"]
+_data = {
+&"Fire": SubResource("Animation_11Int"),
+&"RESET": SubResource("Animation_reset_11Int")
+}
+
+[node name="Tower" type="Node2D" unique_id=400436298]
+scale = Vector2(0.12, 0.12)
+script = ExtResource("1_script")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=1755416822]
+visible = false
+texture = ExtResource("3_tower")
+
+[node name="Tower" type="Sprite2D" parent="." unique_id=1855347618]
+texture = ExtResource("3_tower")
+
+[node name="Muzzle" type="Marker2D" parent="Tower" unique_id=202634574]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Tower/Muzzle" unique_id=1204200228]
+position = Vector2(16.666668, -325.00003)
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_okxxo")
+frame_progress = 0.672106
+speed_scale = 2.0
+
+[node name="Range" type="Area2D" parent="." unique_id=2007066001]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Range" unique_id=717725737]
+shape = SubResource("CircleShape2D_11Int")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=944994602]
+libraries/ = SubResource("AnimationLibrary_11Int")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]

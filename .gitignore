@@ -1,0 +1,7 @@
+# Godot 4+ specific ignores
+.godot/
+.nomedia
+
+# Android build outputs (generated, never commit these)
+# The entire android/ directory is regenerable via Project > Export > Install Android Build Template
+android/
