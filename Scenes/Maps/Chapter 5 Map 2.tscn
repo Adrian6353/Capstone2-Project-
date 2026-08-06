@@ -1,22 +1,21 @@
 [gd_scene format=4 uid="uid://diuhskk5hxlme"]
 
-[ext_resource type="PackedScene" uid="uid://dnch3jqe6rn0p" path="res://Scenes/Maps/Map1_Chapter6.tscn" id="1_2jf3b"]
-[ext_resource type="Texture2D" uid="uid://celecjexooggv" path="res://Assets/Environment/Tilesheets/spritesheet.png" id="2_5vbhr"]
-[ext_resource type="Texture2D" uid="uid://mjarpt82uyqv" path="res://Assets/Deco/01.png" id="3_tdj5c"]
-[ext_resource type="Texture2D" uid="uid://csvhjvkgpk3ue" path="res://Assets/Deco/02.png" id="4_h3g7d"]
-[ext_resource type="Texture2D" uid="uid://b1f2ajev72nfu" path="res://Assets/Deco/12.png" id="5_nbh4e"]
-[ext_resource type="Texture2D" uid="uid://dtka8k4sg2qpi" path="res://Assets/Deco/13.png" id="6_na3r0"]
-[ext_resource type="Texture2D" uid="uid://bbs1k1qjr0tny" path="res://Assets/Deco/15.png" id="7_gnsuv"]
-[ext_resource type="Texture2D" uid="uid://cwpp3pitw570b" path="res://Assets/Deco/14.png" id="8_pdcij"]
-[ext_resource type="Texture2D" uid="uid://d0ru7xkm4yaw5" path="res://Assets/Deco/16.png" id="9_pehfy"]
-[ext_resource type="Texture2D" uid="uid://cduhat8njbfo3" path="res://Assets/Deco/17.png" id="10_vtpbg"]
-[ext_resource type="Texture2D" uid="uid://cduhat8njbfo3" path="res://Assets/Deco/17.png" id="11_b1444"]
-[ext_resource type="Texture2D" uid="uid://cgc3ronof6owc" path="res://Assets/Deco/18.png" id="12_ixm1y"]
-[ext_resource type="Texture2D" uid="uid://jve4anbvskq8" path="res://Assets/Deco/11.png" id="13_ksfs5"]
-[ext_resource type="Texture2D" uid="uid://dptqa850xupwt" path="res://Assets/Decorations/Sheep/HappySheep_Idle.png" id="14_ffbc3"]
+[ext_resource type="PackedScene" uid="uid://dnch3jqe6rn0p" path="res://Scenes/Maps/Map1_Chapter6.tscn" id="1_vo6xl"]
+[ext_resource type="Texture2D" uid="uid://celecjexooggv" path="res://Assets/Environment/Tilesheets/spritesheet.png" id="2_6pc6e"]
+[ext_resource type="Texture2D" uid="uid://mjarpt82uyqv" path="res://Assets/Deco/01.png" id="46_00eu1"]
+[ext_resource type="Texture2D" uid="uid://csvhjvkgpk3ue" path="res://Assets/Deco/02.png" id="47_iuuy0"]
+[ext_resource type="Texture2D" uid="uid://cduhat8njbfo3" path="res://Assets/Deco/17.png" id="48_kmwkf"]
+[ext_resource type="Texture2D" uid="uid://cgc3ronof6owc" path="res://Assets/Deco/18.png" id="49_d3xsx"]
+[ext_resource type="Texture2D" uid="uid://jve4anbvskq8" path="res://Assets/Deco/11.png" id="52_exym1"]
+[ext_resource type="Texture2D" uid="uid://b1f2ajev72nfu" path="res://Assets/Deco/12.png" id="53_5v7cn"]
+[ext_resource type="Texture2D" uid="uid://dtka8k4sg2qpi" path="res://Assets/Deco/13.png" id="54_0ld1m"]
+[ext_resource type="Texture2D" uid="uid://cwpp3pitw570b" path="res://Assets/Deco/14.png" id="55_w7oeg"]
+[ext_resource type="Texture2D" uid="uid://bbs1k1qjr0tny" path="res://Assets/Deco/15.png" id="56_pfcgw"]
+[ext_resource type="Texture2D" uid="uid://d0ru7xkm4yaw5" path="res://Assets/Deco/16.png" id="57_ld2mg"]
+[ext_resource type="Texture2D" uid="uid://dptqa850xupwt" path="res://Assets/Decorations/Sheep/HappySheep_Idle.png" id="58_32w2v"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2rweb"]
-texture = ExtResource("2_5vbhr")
+texture = ExtResource("2_6pc6e")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
@@ -459,21 +458,21 @@ tile_shape = 1
 sources/3 = SubResource("TileSetAtlasSource_2rweb")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0cjii"]
-texture = ExtResource("3_tdj5c")
+texture = ExtResource("46_00eu1")
 1:1/0 = 0
 2:1/0 = 0
 1:2/0 = 0
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fn5he"]
-texture = ExtResource("4_h3g7d")
+texture = ExtResource("47_iuuy0")
 1:1/0 = 0
 2:1/0 = 0
 1:2/0 = 0
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_x2cjh"]
-texture = ExtResource("5_nbh4e")
+texture = ExtResource("53_5v7cn")
 1:0/0 = 0
 2:0/0 = 0
 1:1/0 = 0
@@ -486,7 +485,7 @@ texture = ExtResource("5_nbh4e")
 2:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_evxof"]
-texture = ExtResource("6_na3r0")
+texture = ExtResource("54_0ld1m")
 1:0/0 = 0
 2:0/0 = 0
 0:1/0 = 0
@@ -501,7 +500,7 @@ texture = ExtResource("6_na3r0")
 2:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_demr6"]
-texture = ExtResource("7_gnsuv")
+texture = ExtResource("56_pfcgw")
 2:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
@@ -515,7 +514,7 @@ texture = ExtResource("7_gnsuv")
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oagw8"]
-texture = ExtResource("8_pdcij")
+texture = ExtResource("55_w7oeg")
 1:0/0 = 0
 2:0/0 = 0
 0:1/0 = 0
@@ -531,7 +530,7 @@ texture = ExtResource("8_pdcij")
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_emfgd"]
-texture = ExtResource("9_pehfy")
+texture = ExtResource("57_ld2mg")
 1:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
@@ -540,14 +539,14 @@ texture = ExtResource("9_pehfy")
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p85bn"]
-texture = ExtResource("10_vtpbg")
+texture = ExtResource("48_kmwkf")
 1:1/0 = 0
 2:1/0 = 0
 1:2/0 = 0
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yslot"]
-texture = ExtResource("11_b1444")
+texture = ExtResource("48_kmwkf")
 1:0/0 = 0
 2:0/0 = 0
 1:1/0 = 0
@@ -570,7 +569,7 @@ texture = ExtResource("11_b1444")
 2:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hep2t"]
-texture = ExtResource("12_ixm1y")
+texture = ExtResource("49_d3xsx")
 2:0/0 = 0
 1:1/0 = 0
 2:1/0 = 0
@@ -597,7 +596,7 @@ texture = ExtResource("12_ixm1y")
 3:6/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_slbpx"]
-texture = ExtResource("13_ksfs5")
+texture = ExtResource("52_exym1")
 1:1/0 = 0
 2:1/0 = 0
 1:2/0 = 0
@@ -617,7 +616,7 @@ sources/9 = SubResource("TileSetAtlasSource_slbpx")
 sources/10 = SubResource("TileSetAtlasSource_x2cjh")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dnjaf"]
-texture = ExtResource("14_ffbc3")
+texture = ExtResource("58_32w2v")
 0:0/size_in_atlas = Vector2i(8, 8)
 0:0/animation_speed = 7.59
 0:0/animation_frame_0/duration = 1.0
@@ -631,7 +630,7 @@ texture = ExtResource("14_ffbc3")
 [sub_resource type="TileSet" id="TileSet_8gj2c"]
 sources/0 = SubResource("TileSetAtlasSource_dnjaf")
 
-[node name="Map2" unique_id=1758245569 instance=ExtResource("1_2jf3b")]
+[node name="Map2" unique_id=1758245569 instance=ExtResource("1_vo6xl")]
 position = Vector2(472, -39)
 
 [node name="TowerExclusion" parent="." index="0" unique_id=9525789]
