@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3xpsdxdqbvsq"
-path="res://.godot/imported/DestinationOffline.png-8e51257c493914dd8899430641d2024f.ctex"
+path="res://.godot/imported/DestinationOffline.png-e784a7fcd2c9a8288000b492d152e743.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pixel Art Asset - Portal Monolitic 3.0/Pixel Art Asset - Portal Monolitic 3.0/runes/DestinationOffline.png"
-dest_files=["res://.godot/imported/DestinationOffline.png-8e51257c493914dd8899430641d2024f.ctex"]
+source_file="res://Assets/Monolithic/Monolithic/runes/DestinationOffline.png"
+dest_files=["res://.godot/imported/DestinationOffline.png-e784a7fcd2c9a8288000b492d152e743.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpu38gt1j1rc6"
-path="res://.godot/imported/Pixel Asset - Portal Monolithic Animation57.png-3723e2b09cb2a2a488964a51a1fe8541.ctex"
+path="res://.godot/imported/Pixel Asset - Portal Monolithic Animation57.png-dbdf6bceba98688e39d8ca03027c9cd9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pixel Art Asset - Portal Monolitic 3.0/Pixel Art Asset - Portal Monolitic 3.0/portal/animation/sprites_single/Pixel Asset - Portal Monolithic Animation57.png"
-dest_files=["res://.godot/imported/Pixel Asset - Portal Monolithic Animation57.png-3723e2b09cb2a2a488964a51a1fe8541.ctex"]
+source_file="res://Assets/Monolithic/Monolithic/portal/animation/sprites_single/Pixel Asset - Portal Monolithic Animation57.png"
+dest_files=["res://.godot/imported/Pixel Asset - Portal Monolithic Animation57.png-dbdf6bceba98688e39d8ca03027c9cd9.ctex"]
 
 [params]
 

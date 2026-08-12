@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bh118atmb2yj5"
-path="res://.godot/imported/button.png-e7433f88eb60cc4fcddb675c5aac70f0.ctex"
+path="res://.godot/imported/button.png-09c896194051f4095ab558605fa50cf2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pixel Art Asset - Portal Monolitic 3.0/Pixel Art Asset - Portal Monolitic 3.0/button/button.png"
-dest_files=["res://.godot/imported/button.png-e7433f88eb60cc4fcddb675c5aac70f0.ctex"]
+source_file="res://Assets/Monolithic/Monolithic/button/button.png"
+dest_files=["res://.godot/imported/button.png-09c896194051f4095ab558605fa50cf2.ctex"]
 
 [params]
 

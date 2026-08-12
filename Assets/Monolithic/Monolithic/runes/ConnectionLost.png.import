@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs7ep5eomffyu"
-path="res://.godot/imported/ConnectionLost.png-f7b39977495ccfc2c6bb679a254d27cf.ctex"
+path="res://.godot/imported/ConnectionLost.png-e68030756889ee4d50f0c0414513171d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pixel Art Asset - Portal Monolitic 3.0/Pixel Art Asset - Portal Monolitic 3.0/runes/ConnectionLost.png"
-dest_files=["res://.godot/imported/ConnectionLost.png-f7b39977495ccfc2c6bb679a254d27cf.ctex"]
+source_file="res://Assets/Monolithic/Monolithic/runes/ConnectionLost.png"
+dest_files=["res://.godot/imported/ConnectionLost.png-e68030756889ee4d50f0c0414513171d.ctex"]
 
 [params]
 

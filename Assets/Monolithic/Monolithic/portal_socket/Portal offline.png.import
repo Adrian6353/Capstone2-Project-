@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0rg7ktasahr0"
-path="res://.godot/imported/Portal offline.png-458ee58c346082318988108799a50565.ctex"
+path="res://.godot/imported/Portal offline.png-02253a11bc95fd99c54d2d9792e15f86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pixel Art Asset - Portal Monolitic 3.0/Pixel Art Asset - Portal Monolitic 3.0/portal_socket/Portal offline.png"
-dest_files=["res://.godot/imported/Portal offline.png-458ee58c346082318988108799a50565.ctex"]
+source_file="res://Assets/Monolithic/Monolithic/portal_socket/Portal offline.png"
+dest_files=["res://.godot/imported/Portal offline.png-02253a11bc95fd99c54d2d9792e15f86.ctex"]
 
 [params]
 

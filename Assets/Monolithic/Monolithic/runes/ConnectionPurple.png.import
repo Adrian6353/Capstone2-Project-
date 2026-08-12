@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://djx56j71qgeol"
-path="res://.godot/imported/ConnectionPurple.png-ce722efa518d6719f7a5e1557231ad8e.ctex"
+path="res://.godot/imported/ConnectionPurple.png-1f8c03806e0640b71857c0a46830cbef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pixel Art Asset - Portal Monolitic 3.0/Pixel Art Asset - Portal Monolitic 3.0/runes/ConnectionPurple.png"
-dest_files=["res://.godot/imported/ConnectionPurple.png-ce722efa518d6719f7a5e1557231ad8e.ctex"]
+source_file="res://Assets/Monolithic/Monolithic/runes/ConnectionPurple.png"
+dest_files=["res://.godot/imported/ConnectionPurple.png-1f8c03806e0640b71857c0a46830cbef.ctex"]
 
 [params]
 
